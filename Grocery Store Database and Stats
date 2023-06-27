@@ -1,0 +1,20 @@
+CREATE TABLE macarons (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, stats INTEGER); 
+
+INSERT INTO macarons VALUES (1, "Chocolate", 2, 1);
+INSERT INTO macarons VALUES (2, "Vanilla", 4, 3);
+INSERT INTO macarons VALUES (3, "Strawberry", 6, 5);
+INSERT INTO macarons VALUES (4, "Lavender", 8, 7);
+INSERT INTO macarons VALUES (5, "Coconut", 10, 9);
+INSERT INTO macarons VALUES (6, "Pistachio", 12, 11);
+INSERT INTO macarons VALUES (7, "Rasberry", 14, 13);
+INSERT INTO macarons VALUES (8, "Coffee", 16, 15);
+INSERT INTO macarons VALUES (9, "Carmel", 18, 17);
+INSERT INTO macarons VALUES (10, "Nutella", 20, 19);
+INSERT INTO macarons VALUES (11, "Matcha", 22, 21);
+INSERT INTO macarons VALUES (12, "Cajeta", 24, 23);
+INSERT INTO macarons VALUES (13, "Lechera", 26, 25);
+INSERT INTO macarons VALUES (14, "Mocha", 28, 27);
+INSERT INTO macarons VALUES (15, "Peppermint", 30, 29);
+
+SELECT * FROM macarons WHERE stats >0 ORDER BY stats;
+SELECT MAX (price) FROM macarons;
